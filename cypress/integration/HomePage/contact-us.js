@@ -1,9 +1,11 @@
 /// <reference types="Cypress" />
+import rgbHex from 'rgb-hex';
+
 
 describe("Test Contact Us form on HomePage", () => {
-  it("Should be able to submit a successful submission via contact us form", () => {
+  it.skip("Should be able to submit a successful submission via contact us form", () => {
     //cypress code
-    cy.visit('https://www.rrparkon.com/')
+    cy.visit(Cypress.env('url'))
     cy.get('.fixed-button > img').click()
     cy.get('#first_name').type('Test')
     cy.get('#last_name').type('new')
@@ -33,58 +35,53 @@ describe("Test Contact Us form on HomePage", () => {
     // cy.get('#wpcf7-response-output wpcf7-display-none wpcf7-mail-sent-ok')
     // .should('have.text', 'Thank you for your message. It has been sent.')
     // cy.get('Contact us').xpath("//a[contains(@href, 'contact-us')]").click();
-    cy.get('.quick-link-wrp > :nth-child(2) > :nth-child(3) > a').click()
-
-
-
-    it('Checks for content Homepage h4', () => {
-      cy.visit('https://www.rrparkon.com/')
-      cy.get('h4').should('include.text','We provide semi-automatic and fully automatic parking solutions')
-      cy.get('h4').should('include.text','Our Parking Solutions')
-      cy.log('Content is Present')
-
-    })
-
-
-
-
-
-
-
-
-
   });
- 
- 
- 
+
+
+it.skip('Should Check for content Homepage', () => {
+  cy.visit(Cypress.env('url'))
+  cy.get('h4').should('include.text', 'We provide semi-automatic and fully automatic parking solutions')
+  cy.get('h4').should('include.text', 'Our Parking Solutions')
+  cy.log('Content is Present')
+
+})
   
 
 
+  it.skip('Should Check and find Colours on page', () => {
+  cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then((bgcolor) => { expect(rgbHex(bgcolor)).to.eq('00000000') })
 
 
-
-
-
-
-  before("Should not be able to submit a successful submission via contact us form as all fields are required", () => {
-    //cypress code
-    cy.visit('https://www.rrparkon.com/')
-
-
-    cy.get('.fixed-button > img').click()
-    cy.get(':nth-child(13) > #submit').click()
-
-    cy.get('#wpcf7-f721-o1 > .wpcf7-form > .wpcf7-response-output')
-      .should('have.text', 'One or more fields have an error. Please check and try again.')
-
-  });
-
+})
+      
+      it.skip('Should check Classes on page', () => {
   
+  cy.get('*[class^="logo-box"]')
+  cy.log('Class2 is Present')
+  cy.get('*[class^="hamburger-menu-mobile"]')
+  cy.log('Class3 is Present')
+
+})
+
+
+it('Should check Video on page', () => {
+        
+  cy.visit(Cypress.env('url'))
+  
+  cy.wait(3000);
+ // cy.contains('a[href*="small-img"]').click()
+ cy.visit(Cypress.env('url'))
+
+ cy.get('a[href*="q2UaDebjuSQ"]').click()
+ cy.get('.uk-lightbox-toolbar-icon > svg').click()
+ cy.log('Video1 is Present')
+
+ 
 
 
 
 
-
+})
 
 
 
