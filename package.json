@@ -1,7 +1,17 @@
 {
   "devDependencies": {
+    "cucumber-html-reporter": "^5.5.0",
     "cypress": "^8.4.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-xpath": "^1.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "name": "rrkabel",
   "version": "1.0.0",
