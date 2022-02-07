@@ -6,7 +6,7 @@ describe("Test Tower Parking page Title", () => {
     it("Should be able to check title on Page", () => {
         //cypress code
         //cy.visit('https://www.rrparkon.com/parking-solution/tower-parking-system')
-        cy.visit(Cypress.env('url')+"/parking-solution/tower-parking-system'")
+        cy.visit(Cypress.env('url')+"/parking-solution/tower-parking-system")
         cy.title().should('eq', 'Tower Parking System In Mumbai | RR Parkon')
         
 

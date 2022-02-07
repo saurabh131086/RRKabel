@@ -3,15 +3,12 @@
     "cucumber-html-reporter": "^5.5.0",
     "cypress": "^8.4.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-xpath": "^1.6.2"
-  },
-  "cypress-cucumber-preprocessor": {
-    "cucumberJson": {
-      "generate": true,
-      "outputFolder": "cypress/cucumber-json",
-      "filePrefix": "",
-      "fileSuffix": ".cucumber"
-    }
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha": "^9.2.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
   },
   "name": "rrkabel",
   "version": "1.0.0",

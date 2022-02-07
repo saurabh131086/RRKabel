@@ -2,7 +2,7 @@
 import rgbHex from 'rgb-hex';
 
 
-describe("Test Customized Soultions page", () => {
+describe("Test Customized Solutions page", () => {
     it("Should be able to check title on Page", () => {
         //cypress code
       //  cy.visit('https://www.rrparkon.com/customized-solutions')

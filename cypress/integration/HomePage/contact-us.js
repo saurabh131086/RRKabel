@@ -76,12 +76,19 @@ it('Should check Video on page', () => {
  cy.get('.uk-lightbox-toolbar-icon > svg').click()
  cy.log('Video1 is Present')
 
- 
-
-
-
-
 })
+
+
+
+
+
+
+
+
+
+      
+
+
 
 
 

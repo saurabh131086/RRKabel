@@ -2,7 +2,7 @@
 import rgbHex from 'rgb-hex';
 
 
-describe("Test Footerof all  Pages", () => {
+describe("Should check Footer links of all  Pages", () => {
     it("Should be able to Redirect on About Us page", () => {
         //cypress code
 
@@ -21,11 +21,20 @@ describe("Test Footerof all  Pages", () => {
 
     it("Should be able to check Privacy policy on Page", () => {
         //cypress code
+
+        var result
         cy.visit(Cypress.env('url'))
         cy.get('.address-ul-list > :nth-child(1) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/wp-content/uploads/sites/3/2017/07/Privacy-policy.pdf')
         cy.get('.address-ul-list > :nth-child(2) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/wp-content/uploads/sites/3/2017/07/Terms-of-Use.pdf')
         cy.get('.address-ul-list > :nth-child(3) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/wp-content/uploads/sites/3/2017/07/Legal-disclaimer.pdf')
       //  cy.get('.address-ul-list > :nth-child(4) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/sitemap/')
+      result = cy.request('https://www.rrparkon.com/sitemap/')
+       
+      result.its('status')
+            .should('equal',200);
+
+
+
 
     });
 
