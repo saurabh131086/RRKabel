@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:15:54.266Z",
+    "end": "2022-02-09T06:15:57.315Z",
+    "duration": 3049,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b20c456f-476d-4a68-a6df-3b48f25c6824",
+      "title": "",
+      "fullFile": "cypress/integration/Client-Insights/Landmarkprojects.js",
+      "file": "cypress/integration/Client-Insights/Landmarkprojects.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "889b1368-891d-4c6c-a554-494b744db7b9",
+          "title": "Test Landmark Projects page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Landmark Projects page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1373,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/client-insight/landmark-projects-smart-car-parking-system-in-india')\ncy.visit(Cypress.env('url') + \"/client-insight/landmark-projects-smart-car-parking-system-in-india\");\ncy.title().should('eq', 'RR Parkon Major Projects | Smart Car Parking System in India');",
+              "err": {},
+              "uuid": "9b6c14b9-147f-4854-b1bb-dc37c3df8803",
+              "parentUUID": "889b1368-891d-4c6c-a554-494b744db7b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks for content Landmark Page",
+              "fullTitle": "Test Landmark Projects page Checks for content Landmark Page",
+              "timedOut": null,
+              "duration": 165,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'Landmark Projects');\ncy.get('[class=container]').contains('Government');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "3245a57d-67a2-4a2c-9b09-759acd6239b8",
+              "parentUUID": "889b1368-891d-4c6c-a554-494b744db7b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test Landmark Projects page Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 22,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "9122eccc-4263-4f94-8f1d-0620b90e02ea",
+              "parentUUID": "889b1368-891d-4c6c-a554-494b744db7b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test Landmark Projects page Should check Classes on page",
+              "timedOut": null,
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "d042c91a-74fc-43dc-8f35-0ca9c0a29b31",
+              "parentUUID": "889b1368-891d-4c6c-a554-494b744db7b9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9b6c14b9-147f-4854-b1bb-dc37c3df8803",
+            "3245a57d-67a2-4a2c-9b09-759acd6239b8",
+            "9122eccc-4263-4f94-8f1d-0620b90e02ea",
+            "d042c91a-74fc-43dc-8f35-0ca9c0a29b31"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1581,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

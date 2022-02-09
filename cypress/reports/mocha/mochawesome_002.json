@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:14:57.309Z",
+    "end": "2022-02-09T06:15:00.155Z",
+    "duration": 2846,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f6b94ae5-0b7d-47c6-a407-f96fc834d99f",
+      "title": "",
+      "fullFile": "cypress/integration/About-Us/Manufacturing-Facilities.js",
+      "file": "cypress/integration/About-Us/Manufacturing-Facilities.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "460693ac-5fa6-48ed-9a4d-bca493141369",
+          "title": "Test Manufacturing in About us",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Manufacturing in About us Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1250,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n//cy.visit('https://www.rrparkon.com/company-overview/manufacturing-facilities-car-parking-system-manufacturer')\ncy.visit(Cypress.env('url') + \"/company-overview/manufacturing-facilities-car-parking-system-manufacturer\");\ncy.title().should('eq', 'RR Parkon Manufacturing Facilities | Smart Parking');",
+              "err": {},
+              "uuid": "2d458e29-697a-4e61-af24-c89f9044d13f",
+              "parentUUID": "460693ac-5fa6-48ed-9a4d-bca493141369",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Manufacturing Page",
+              "fullTitle": "Test Manufacturing in About us Should Check for content Manufacturing Page",
+              "timedOut": null,
+              "duration": 75,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'We deliver only the highest quality products, made possible by our state');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "52ebbb99-967e-4cbf-b3b3-19e737d66f72",
+              "parentUUID": "460693ac-5fa6-48ed-9a4d-bca493141369",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Colours on page",
+              "fullTitle": "Test Manufacturing in About us Should find Colours on page",
+              "timedOut": null,
+              "duration": 29,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "bd6acbb2-a63a-4be4-b8eb-cc554c29eeaa",
+              "parentUUID": "460693ac-5fa6-48ed-9a4d-bca493141369",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Classes on page",
+              "fullTitle": "Test Manufacturing in About us Should find Classes on page",
+              "timedOut": null,
+              "duration": 19,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "ebde8ca2-992c-45b8-9aba-7d5992b77ccc",
+              "parentUUID": "460693ac-5fa6-48ed-9a4d-bca493141369",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2d458e29-697a-4e61-af24-c89f9044d13f",
+            "52ebbb99-967e-4cbf-b3b3-19e737d66f72",
+            "bd6acbb2-a63a-4be4-b8eb-cc554c29eeaa",
+            "ebde8ca2-992c-45b8-9aba-7d5992b77ccc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1373,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

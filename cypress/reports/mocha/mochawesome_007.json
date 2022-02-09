@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:15:23.243Z",
+    "end": "2022-02-09T06:15:26.442Z",
+    "duration": 3199,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "742288f7-bb29-4f65-a820-f3445e907c4d",
+      "title": "",
+      "fullFile": "cypress/integration/Client-Insights/Blogs.js",
+      "file": "cypress/integration/Client-Insights/Blogs.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1c34fb4d-7f04-4b68-8f48-120f5f4bbe30",
+          "title": "Test Blogs page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Blogs page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1924,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n//cy.visit('https://www.rrparkon.com/blogs')\ncy.visit(Cypress.env('url') + \"/blogs\");\ncy.title().should('eq', 'Car Parking Blogs | RR Parkon');",
+              "err": {},
+              "uuid": "8bc2f50b-cac9-483d-9531-59070eab9bbc",
+              "parentUUID": "1c34fb4d-7f04-4b68-8f48-120f5f4bbe30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Blogs Page",
+              "fullTitle": "Test Blogs page Should Check for content Blogs Page",
+              "timedOut": null,
+              "duration": 85,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'Blogs');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "59c1c999-4b3f-4876-a0a6-1df0dc4617bd",
+              "parentUUID": "1c34fb4d-7f04-4b68-8f48-120f5f4bbe30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content ",
+              "fullTitle": "Test Blogs page Should Check for content ",
+              "timedOut": null,
+              "duration": 44,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('The right type of parking');\ncy.get('p').contains('The right type of parking');",
+              "err": {},
+              "uuid": "187e96a5-4729-47b6-9529-9753a1bc0907",
+              "parentUUID": "1c34fb4d-7f04-4b68-8f48-120f5f4bbe30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test Blogs page Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 16,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "baaac118-046c-4068-9d1c-e31bccef954d",
+              "parentUUID": "1c34fb4d-7f04-4b68-8f48-120f5f4bbe30",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test Blogs page Should check Classes on page",
+              "timedOut": null,
+              "duration": 20,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "e7e834af-8a72-486c-95e6-145678ab49c2",
+              "parentUUID": "1c34fb4d-7f04-4b68-8f48-120f5f4bbe30",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8bc2f50b-cac9-483d-9531-59070eab9bbc",
+            "59c1c999-4b3f-4876-a0a6-1df0dc4617bd",
+            "187e96a5-4729-47b6-9529-9753a1bc0907",
+            "baaac118-046c-4068-9d1c-e31bccef954d",
+            "e7e834af-8a72-486c-95e6-145678ab49c2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2089,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

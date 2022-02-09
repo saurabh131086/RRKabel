@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:17:52.502Z",
+    "end": "2022-02-09T06:17:54.753Z",
+    "duration": 2251,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "81adeeac-daa5-4e2e-9fcf-972ad28ef99d",
+      "title": "",
+      "fullFile": "cypress/integration/Parking-Solutions/OGP-Hydraulic-system.js",
+      "file": "cypress/integration/Parking-Solutions/OGP-Hydraulic-system.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7eb73391-c63f-4d48-b968-cd0c2ae1eae5",
+          "title": "Test OGP Hydraulic Parking System page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test OGP Hydraulic Parking System page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 948,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/parking-solution/ogp-hydraulic-system')\ncy.visit(Cypress.env('url') + \"/parking-solution/ogp-hydraulic-system\");\ncy.title().should('eq', 'Hydraulic Puzzle Parking System | RR Parkon');",
+              "err": {},
+              "uuid": "ddfb5f22-aea7-4963-9081-da58a5fad666",
+              "parentUUID": "7eb73391-c63f-4d48-b968-cd0c2ae1eae5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Hydraulic Parking System page",
+              "fullTitle": "Test OGP Hydraulic Parking System page Should Check for content Hydraulic Parking System page",
+              "timedOut": null,
+              "duration": 110,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'Hydraulic System');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "6c68111b-142b-4ef5-ac70-2059a0eb7384",
+              "parentUUID": "7eb73391-c63f-4d48-b968-cd0c2ae1eae5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test OGP Hydraulic Parking System page Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 36,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "b7e52453-7906-433e-b542-4cc6b81a68b3",
+              "parentUUID": "7eb73391-c63f-4d48-b968-cd0c2ae1eae5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test OGP Hydraulic Parking System page Should check Classes on page",
+              "timedOut": null,
+              "duration": 25,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "885f8581-7256-4c27-b59e-feb22c3d2b3d",
+              "parentUUID": "7eb73391-c63f-4d48-b968-cd0c2ae1eae5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ddfb5f22-aea7-4963-9081-da58a5fad666",
+            "6c68111b-142b-4ef5-ac70-2059a0eb7384",
+            "b7e52453-7906-433e-b542-4cc6b81a68b3",
+            "885f8581-7256-4c27-b59e-feb22c3d2b3d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1119,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

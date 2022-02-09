@@ -1,0 +1,184 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 4,
+    "failures": -4,
+    "start": "2022-02-09T06:17:00.550Z",
+    "end": "2022-02-09T06:17:06.984Z",
+    "duration": 6434,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 80,
+    "other": 4,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fffbabc1-4e0d-40f4-a409-c0e45eafd0f6",
+      "title": "",
+      "fullFile": "cypress/integration/HomePage/contact-us.js",
+      "file": "cypress/integration/HomePage/contact-us.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8a80de8a-d92b-485a-a796-8294749d8c65",
+          "title": "Test Contact Us form on HomePage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to submit a successful submission via contact us form",
+              "fullTitle": "Test Contact Us form on HomePage Should be able to submit a successful submission via contact us form",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "caaaba18-82c9-4766-b77e-7b06e6bb4b36",
+              "parentUUID": "8a80de8a-d92b-485a-a796-8294749d8c65",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Homepage",
+              "fullTitle": "Test Contact Us form on HomePage Should Check for content Homepage",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "2b180c90-4aa6-4757-844a-07f4701357e0",
+              "parentUUID": "8a80de8a-d92b-485a-a796-8294749d8c65",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test Contact Us form on HomePage Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "d82d8e15-3dc2-4ccf-bcf7-bf736c0aa5f2",
+              "parentUUID": "8a80de8a-d92b-485a-a796-8294749d8c65",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test Contact Us form on HomePage Should check Classes on page",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "0a67697c-4f7c-48c8-9e65-867b5069c383",
+              "parentUUID": "8a80de8a-d92b-485a-a796-8294749d8c65",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Video on page",
+              "fullTitle": "Test Contact Us form on HomePage Should check Video on page",
+              "timedOut": null,
+              "duration": 5068,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url'));\ncy.wait(3000); // cy.contains('a[href*=\"small-img\"]').click()\ncy.visit(Cypress.env('url'));\ncy.get('a[href*=\"q2UaDebjuSQ\"]').click();\ncy.get('.uk-lightbox-toolbar-icon > svg').click();\ncy.log('Video1 is Present');",
+              "err": {},
+              "uuid": "317acfc2-b063-43a5-a116-86858d88a1f3",
+              "parentUUID": "8a80de8a-d92b-485a-a796-8294749d8c65",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "317acfc2-b063-43a5-a116-86858d88a1f3"
+          ],
+          "failures": [],
+          "pending": [
+            "caaaba18-82c9-4766-b77e-7b06e6bb4b36",
+            "2b180c90-4aa6-4757-844a-07f4701357e0",
+            "d82d8e15-3dc2-4ccf-bcf7-bf736c0aa5f2",
+            "0a67697c-4f7c-48c8-9e65-867b5069c383"
+          ],
+          "skipped": [],
+          "duration": 5068,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

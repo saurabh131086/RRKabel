@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:18:02.711Z",
+    "end": "2022-02-09T06:18:04.797Z",
+    "duration": 2086,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "deefdd98-06dd-4402-b7fc-5f673c282d0a",
+      "title": "",
+      "fullFile": "cypress/integration/Parking-Solutions/shuttle-Parking-System.js",
+      "file": "cypress/integration/Parking-Solutions/shuttle-Parking-System.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "524c2739-b924-4ba1-b705-9468de7836d6",
+          "title": "Test Shuttle Parking System",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Shuttle Parking System Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 877,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/parking-solution/shuttle-parking-system')\ncy.visit(Cypress.env('url') + \"/parking-solution/shuttle-parking-system\");\ncy.title().should('eq', 'Shuttle Car Parking System | RR Parkon');",
+              "err": {},
+              "uuid": "600fe696-a86d-4175-855e-2e1758d33010",
+              "parentUUID": "524c2739-b924-4ba1-b705-9468de7836d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Shuttle Parking System",
+              "fullTitle": "Test Shuttle Parking System Should Check for content Shuttle Parking System",
+              "timedOut": null,
+              "duration": 78,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'SHUTTLE PARKING SYSTEM');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "3eb605bd-4b36-4216-8eb8-ce8fe0b42abe",
+              "parentUUID": "524c2739-b924-4ba1-b705-9468de7836d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test Shuttle Parking System Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 24,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "dfdb346b-6a11-4f71-86f5-52f320cc2070",
+              "parentUUID": "524c2739-b924-4ba1-b705-9468de7836d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test Shuttle Parking System Should check Classes on page",
+              "timedOut": null,
+              "duration": 20,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "bee8389f-b17f-4056-a5a3-4bed0cc19651",
+              "parentUUID": "524c2739-b924-4ba1-b705-9468de7836d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "600fe696-a86d-4175-855e-2e1758d33010",
+            "3eb605bd-4b36-4216-8eb8-ce8fe0b42abe",
+            "dfdb346b-6a11-4f71-86f5-52f320cc2070",
+            "bee8389f-b17f-4056-a5a3-4bed0cc19651"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 999,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

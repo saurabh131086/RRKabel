@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:16:42.935Z",
+    "end": "2022-02-09T06:16:47.393Z",
+    "duration": 4458,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0b68f989-236f-4fda-8866-c0a6c502fa1c",
+      "title": "",
+      "fullFile": "cypress/integration/Generic-Functions/Footer.js",
+      "file": "cypress/integration/Generic-Functions/Footer.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df83622e-1cd0-47cd-81f2-115bc21300a7",
+          "title": "Should check Footer links of all  Pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to Redirect on About Us page",
+              "fullTitle": "Should check Footer links of all  Pages Should be able to Redirect on About Us page",
+              "timedOut": null,
+              "duration": 1271,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n//cy.visit('https://www.rrparkon.com/')\ncy.visit(Cypress.env('url'));\ncy.get('.quick-link-wrp > :nth-child(1) > :nth-child(1) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/company-overview/'); //  cy.get('.quick-link-wrp > :nth-child(1) > :nth-child(2) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/parking-solution/twin-park-system-2/')\ncy.get('.quick-link-wrp > :nth-child(1) > :nth-child(3) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/amc/annual-maintenance-contract-car-parking-solution/');\ncy.get('.quick-link-wrp > :nth-child(1) > :nth-child(4) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/media-center/news-car-lift-car-parking-solution/');\ncy.get('.quick-link-wrp > :nth-child(2) > :nth-child(1) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/client-insight/landmark-projects-smart-car-parking-system-in-india/');\ncy.get('.quick-link-wrp > :nth-child(2) > :nth-child(2) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/career-center/employee-rrparkon/');\ncy.get('.quick-link-wrp > :nth-child(2) > :nth-child(3) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/contact-us/');",
+              "err": {},
+              "uuid": "d027da52-b122-4738-894d-0c2f9942b97c",
+              "parentUUID": "df83622e-1cd0-47cd-81f2-115bc21300a7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to check Privacy policy on Page",
+              "fullTitle": "Should check Footer links of all  Pages Should be able to check Privacy policy on Page",
+              "timedOut": null,
+              "duration": 1507,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\nvar result;\ncy.visit(Cypress.env('url'));\ncy.get('.address-ul-list > :nth-child(1) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/wp-content/uploads/sites/3/2017/07/Privacy-policy.pdf');\ncy.get('.address-ul-list > :nth-child(2) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/wp-content/uploads/sites/3/2017/07/Terms-of-Use.pdf');\ncy.get('.address-ul-list > :nth-child(3) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/wp-content/uploads/sites/3/2017/07/Legal-disclaimer.pdf'); //  cy.get('.address-ul-list > :nth-child(4) > a').invoke('attr', 'href').should('eq', 'https://www.rrparkon.com/sitemap/')\nresult = cy.request('https://www.rrparkon.com/sitemap/');\nresult.its('status').should('equal', 200);",
+              "err": {},
+              "uuid": "047c1217-fbc6-45e6-8a42-de6795665620",
+              "parentUUID": "df83622e-1cd0-47cd-81f2-115bc21300a7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Footer Page",
+              "fullTitle": "Should check Footer links of all  Pages Should Check for content Footer Page",
+              "timedOut": null,
+              "duration": 135,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'Head Office');\ncy.get('h4').should('include.text', 'Quick Links');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "4cc3655b-cbe0-42fe-b7a4-c2085609ab89",
+              "parentUUID": "df83622e-1cd0-47cd-81f2-115bc21300a7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Should check Footer links of all  Pages Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 31,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "b675e073-890c-417a-8689-2759ca4a759f",
+              "parentUUID": "df83622e-1cd0-47cd-81f2-115bc21300a7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Should check Footer links of all  Pages Should check Classes on page",
+              "timedOut": null,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "88110866-dcd2-4445-b58f-674ca27411dd",
+              "parentUUID": "df83622e-1cd0-47cd-81f2-115bc21300a7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d027da52-b122-4738-894d-0c2f9942b97c",
+            "047c1217-fbc6-45e6-8a42-de6795665620",
+            "4cc3655b-cbe0-42fe-b7a4-c2085609ab89",
+            "b675e073-890c-417a-8689-2759ca4a759f",
+            "88110866-dcd2-4445-b58f-674ca27411dd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2961,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

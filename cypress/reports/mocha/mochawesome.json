@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:14:44.844Z",
+    "end": "2022-02-09T06:14:49.051Z",
+    "duration": 4207,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "86cc2d0a-dc5b-449a-8124-bacbf7f5baff",
+      "title": "",
+      "fullFile": "cypress/integration/About-Us/Accomplishments.js",
+      "file": "cypress/integration/About-Us/Accomplishments.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3886144f-9e10-4090-afe3-4b772633e2bb",
+          "title": "Test Accomplishments in About Us",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should check title on Page",
+              "fullTitle": "Test Accomplishments in About Us Should check title on Page",
+              "timedOut": null,
+              "duration": 2074,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n//  cy.visit('https://www.rrparkon.com/accomplishment')\ncy.visit(Cypress.env('url') + \"/accomplishment\");\ncy.title().should('eq', 'RR Parkon Accomplishment | Parking System');\ncy.get('h4').should('include.text', 'RR Parkon is pioneering the automated car parking industry');",
+              "err": {},
+              "uuid": "f28f5b8f-1367-4590-aaa8-e091adf76ee4",
+              "parentUUID": "3886144f-9e10-4090-afe3-4b772633e2bb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check for content Accomplishment Page",
+              "fullTitle": "Test Accomplishments in About Us Should check for content Accomplishment Page",
+              "timedOut": null,
+              "duration": 160,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'RR Parkon is pioneering the automated car parking industry');\ncy.contains('[class=date]', '2001').should('have.text', '2001');\ncy.contains('[class=date]', '2002').should('have.text', '2002');\ncy.contains('[class=date]', '2007').should('have.text', '2007');\ncy.contains('[class=date]', '2010').should('have.text', '2010');\ncy.contains('[class=date]', '2011').should('have.text', '2011');\ncy.contains('[class=date]', '2014').should('have.text', '2014');\ncy.contains('[class=date]', '2016').should('have.text', '2016');\ncy.get('h4').should('include.text', ' Remarkable Feats');\ncy.log('Content is Present');",
+              "err": {},
+              "uuid": "65af1e57-0f20-46d4-beda-1b7ede2f60d3",
+              "parentUUID": "3886144f-9e10-4090-afe3-4b772633e2bb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Colours on page",
+              "fullTitle": "Test Accomplishments in About Us Should find Colours on page",
+              "timedOut": null,
+              "duration": 52,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=date]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('ffde00');\n});\ncy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "f9671984-3bef-4791-be06-846128f607ab",
+              "parentUUID": "3886144f-9e10-4090-afe3-4b772633e2bb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Classes on page",
+              "fullTitle": "Test Accomplishments in About Us Should find Classes on page",
+              "timedOut": null,
+              "duration": 19,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "a1fd8a24-3c99-4f48-b0c3-8eb124013720",
+              "parentUUID": "3886144f-9e10-4090-afe3-4b772633e2bb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f28f5b8f-1367-4590-aaa8-e091adf76ee4",
+            "65af1e57-0f20-46d4-beda-1b7ede2f60d3",
+            "f9671984-3bef-4791-be06-846128f607ab",
+            "a1fd8a24-3c99-4f48-b0c3-8eb124013720"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2305,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

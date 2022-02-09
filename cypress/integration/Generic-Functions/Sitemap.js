@@ -91,7 +91,7 @@ cy.log('terms of use checked')
 
 
 //Legal Disclaimer
-cy.get(':nth-child(5) > :nth-child(4) > a').should('include.text', 'Legal Disclaimer')
+cy.get(':nth-child(5) > :nth-child(4) > a').should('include.text', 'Legal Disclaimera')
 
 
 

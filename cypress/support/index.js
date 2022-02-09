@@ -21,7 +21,11 @@ import './commands'
 import addContext from "mochawesome/addContext";
 Cypress.on("test:after:run", (test, runnable) => {  
     if (test.state === "failed") {    
-      const screenshot       =`assets/${Cypress.spec.name}/${runnable.parent.title} --       ${test.title} (failed).png`;    
-  addContext({ test }, screenshot);  
+      
+      addContext({ test }, {title: 'Screenshot', value: `C:/Users/id8admin/Desktop/RRKABEL/cypress/screenshots/${Cypress.spec.name}/${runnable.parent.title.replace(':', '')} -- ${test.title} (failed).png`})
+        addContext({ test }, {title: 'Video', value: `C:/Users/id8admin/Desktop/RRKABEL/cypress/videos/${Cypress.spec.name}.mp4`})
+    }0
+
     }
-  });
+  
+  );

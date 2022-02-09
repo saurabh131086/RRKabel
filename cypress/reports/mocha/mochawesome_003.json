@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:15:02.749Z",
+    "end": "2022-02-09T06:15:04.922Z",
+    "duration": 2173,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "74619907-dcd0-4be8-93f0-83bb4076f7f8",
+      "title": "",
+      "fullFile": "cypress/integration/AMC/AMC.js",
+      "file": "cypress/integration/AMC/AMC.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3eaaf233-a995-4066-97ef-a4e4b7bc7231",
+          "title": "Test Annual maintainence contracts System page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Annual maintainence contracts System page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 922,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/amc/annual-maintenance-contract-car-parking-solution')\ncy.visit(Cypress.env('url') + \"/amc/annual-maintenance-contract-car-parking-solution\");\ncy.title().should('eq', 'Car Parking Annual Maintenance Contract India | Multi Level Car Parking Amc Mumbai | RR Parkon');",
+              "err": {},
+              "uuid": "8894f85e-c68a-4616-8efe-606c91981387",
+              "parentUUID": "3eaaf233-a995-4066-97ef-a4e4b7bc7231",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content AMC Page",
+              "fullTitle": "Test Annual maintainence contracts System page Should Check for content AMC Page",
+              "timedOut": null,
+              "duration": 80,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'Annual');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "30bfde99-6792-4c90-b560-ab8de9325701",
+              "parentUUID": "3eaaf233-a995-4066-97ef-a4e4b7bc7231",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Colours on page",
+              "fullTitle": "Test Annual maintainence contracts System page Should find Colours on page",
+              "timedOut": null,
+              "duration": 28,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "03d1a3e9-bae2-409e-b25c-814e1b9558db",
+              "parentUUID": "3eaaf233-a995-4066-97ef-a4e4b7bc7231",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Classes on page",
+              "fullTitle": "Test Annual maintainence contracts System page Should find Classes on page",
+              "timedOut": null,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "4a1e549c-ef73-41bc-a3a8-610f6e9890d4",
+              "parentUUID": "3eaaf233-a995-4066-97ef-a4e4b7bc7231",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8894f85e-c68a-4616-8efe-606c91981387",
+            "30bfde99-6792-4c90-b560-ab8de9325701",
+            "03d1a3e9-bae2-409e-b25c-814e1b9558db",
+            "4a1e549c-ef73-41bc-a3a8-610f6e9890d4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1056,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:17:35.482Z",
+    "end": "2022-02-09T06:17:38.694Z",
+    "duration": 3212,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "334f6f16-3df8-4306-ad45-abc48f952a4c",
+      "title": "",
+      "fullFile": "cypress/integration/Parking-Solutions/hydrolictwinpark.js",
+      "file": "cypress/integration/Parking-Solutions/hydrolictwinpark.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e2788851-2d87-4eb0-922e-5aaec6201225",
+          "title": "Test Hydraulic Twin Parking System page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Hydraulic Twin Parking System page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1654,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n//cy.visit('https://www.rrparkon.com/parking-solution/h-tp-hydraulic-twin-park')\ncy.visit(Cypress.env('url') + \"/parking-solution/h-tp-hydraulic-twin-park\");\ncy.title().should('eq', 'Hydraulic Twin Car Parking System In India | RR Parkon');",
+              "err": {},
+              "uuid": "6ac24f92-4e4a-4778-9f87-fc8fd6e16b5c",
+              "parentUUID": "e2788851-2d87-4eb0-922e-5aaec6201225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should  Check for content AMC Page",
+              "fullTitle": "Test Hydraulic Twin Parking System page Should  Check for content AMC Page",
+              "timedOut": null,
+              "duration": 85,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'HTP');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "75b07ed5-12ee-4b78-94b4-27d45617f819",
+              "parentUUID": "e2788851-2d87-4eb0-922e-5aaec6201225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test Hydraulic Twin Parking System page Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 25,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "3d69f2e0-8336-4a06-aa6d-9523b4bedf59",
+              "parentUUID": "e2788851-2d87-4eb0-922e-5aaec6201225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test Hydraulic Twin Parking System page Should check Classes on page",
+              "timedOut": null,
+              "duration": 16,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "3f294de7-f0cc-497d-8c56-4c65a99887fc",
+              "parentUUID": "e2788851-2d87-4eb0-922e-5aaec6201225",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6ac24f92-4e4a-4778-9f87-fc8fd6e16b5c",
+            "75b07ed5-12ee-4b78-94b4-27d45617f819",
+            "3d69f2e0-8336-4a06-aa6d-9523b4bedf59",
+            "3f294de7-f0cc-497d-8c56-4c65a99887fc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1780,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

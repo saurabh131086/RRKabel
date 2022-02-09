@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:16:30.709Z",
+    "end": "2022-02-09T06:16:34.458Z",
+    "duration": 3749,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1478c341-a1af-4ce8-acd7-f9207a7ab51f",
+      "title": "",
+      "fullFile": "cypress/integration/Contact/Contactus.js",
+      "file": "cypress/integration/Contact/Contactus.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ccf40f42-306d-4787-ae89-8dee83e7181d",
+          "title": "Test Contact Us page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Contact Us page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 2214,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/contact-us')\ncy.visit(Cypress.env('url') + \"/contact-us\");\ncy.title().should('eq', 'Contact Us | RR Parkon');",
+              "err": {},
+              "uuid": "c17345a8-9f70-4dc8-9fa0-89b205ae16d8",
+              "parentUUID": "ccf40f42-306d-4787-ae89-8dee83e7181d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Contact Us Page",
+              "fullTitle": "Test Contact Us page Should Check for content Contact Us Page",
+              "timedOut": null,
+              "duration": 98,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'Mumbai (Head office)');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "d32d2b7a-6277-4317-88d2-aa2b956133ee",
+              "parentUUID": "ccf40f42-306d-4787-ae89-8dee83e7181d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test Contact Us page Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 38,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "808485df-3887-4b42-bef1-5c408328e6e0",
+              "parentUUID": "ccf40f42-306d-4787-ae89-8dee83e7181d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test Contact Us page Should check Classes on page",
+              "timedOut": null,
+              "duration": 25,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "c1f31d60-bb41-45e7-b881-75ffcab0d898",
+              "parentUUID": "ccf40f42-306d-4787-ae89-8dee83e7181d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c17345a8-9f70-4dc8-9fa0-89b205ae16d8",
+            "d32d2b7a-6277-4317-88d2-aa2b956133ee",
+            "808485df-3887-4b42-bef1-5c408328e6e0",
+            "c1f31d60-bb41-45e7-b881-75ffcab0d898"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2375,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

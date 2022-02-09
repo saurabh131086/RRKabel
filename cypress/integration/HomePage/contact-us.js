@@ -18,7 +18,7 @@ describe("Test Contact Us form on HomePage", () => {
     cy.wait(3000)
     //  cy.get('#MainSelectCountry').select(0).should('have.value', 'India')
     //cy.get('#MainSelectCountry').select('India').should ('have.value', 'India')
-    // cy.get('#MainSelectCountry').select['India',1]
+     cy.get('#MainSelectCountry').select['India',1]
     ///cy.get('#MainSelectCountry').then($country => {$country.val("India")}).click()   
     // cy.wait(3000)
     //cy.wait('#MainSelectCountry').its('Select Country').should('eq', 'India')

@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-02-09T06:16:50.272Z",
+    "end": "2022-02-09T06:16:57.588Z",
+    "duration": 7316,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2e82a577-cf80-4466-8aa2-950e3b386df6",
+      "title": "",
+      "fullFile": "cypress/integration/Generic-Functions/Sitemap.js",
+      "file": "cypress/integration/Generic-Functions/Sitemap.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6a77c0ad-54fe-4e87-a2ce-fd7d26da5222",
+          "title": "Should check links of all  Pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be check redirect content to all pages",
+              "fullTitle": "Should check links of all  Pages Should be check redirect content to all pages",
+              "timedOut": null,
+              "duration": 6129,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"Screenshot\",\n    \"value\": \"C:/Users/id8admin/Desktop/RRKABEL/cypress/screenshots/Generic-Functions/Sitemap.js/Should check links of all  Pages -- Should be check redirect content to all pages (failed).png\"\n  },\n  {\n    \"title\": \"Video\",\n    \"value\": \"C:/Users/id8admin/Desktop/RRKABEL/cypress/videos/Generic-Functions/Sitemap.js.mp4\"\n  }\n]",
+              "code": "cy.visit('https://www.rrparkon.com/sitemap/');\ncy.get(':nth-child(1) > :nth-child(1) > .n-parent-list > :nth-child(1) > a').should('include.text', 'Company Overview');\ncy.get(':nth-child(1) > :nth-child(1) > .n-parent-list > :nth-child(2)').should('include.text', 'Manufacturing Facilities');\ncy.get(':nth-child(1) > :nth-child(1) > .n-parent-list > :nth-child(3)').should('include.text', 'Accomplishments'); //AMC\ncy.get(':nth-child(2) > :nth-child(1) > .n-parent-list > :nth-child(1) > a').should('include.text', 'AMC Products');\ncy.get(':nth-child(2) > :nth-child(1) > .n-parent-list > :nth-child(2) > a').should('include.text', 'Upgrades'); //Parking solutions\n//Twin parking solutions\ncy.get(':nth-child(1) > .n-inner-list > :nth-child(1) > a').should('include.text', 'Electromechanical Twin Park');\ncy.get(':nth-child(1) > .n-inner-list > :nth-child(2) > a').should('include.text', 'Hydraulic Twin Park'); //Stack parking system\ncy.get(':nth-child(2) > .n-inner-list > :nth-child(1) > a').should('include.text', '3 Stage Over Groun');\ncy.get(':nth-child(2) > .n-inner-list > :nth-child(2) > a').should('include.text', '2 & 3 Stage Pit Type'); //PUZZLE PARKING PARKING SYSTEM..\ncy.get(':nth-child(3) > .n-inner-list > :nth-child(1) > a').should('include.text', 'OGP – Electromechanical System');\ncy.get(':nth-child(3) > .n-inner-list > :nth-child(2) > a').should('include.text', 'OGP – Hydraulic System'); //PIT PUZZLE PARKING SYSTEM\ncy.get(':nth-child(4) > .n-inner-list > :nth-child(1) > a').should('include.text', 'Electromechanical System');\ncy.get(':nth-child(4) > .n-inner-list > :nth-child(2) > a').should('include.text', 'Hydraulic System'); //MINI ROTARY PARKING SYSTEM\ncy.get(':nth-child(1) > :nth-child(2) > .n-parent-list > :nth-child(5) > a').should('include.text', 'MINI ROTARY PARKING SYSTEM'); ///HORIZONTAL CIRCULATION PARKING SYSTEM\ncy.get(':nth-child(1) > :nth-child(2) > .n-parent-list > :nth-child(6) > a').should('include.text', 'HORIZONTAL CIRCULATION PARKING SYSTEM'); //TOWER PARKING SYSTEM\ncy.get(':nth-child(1) > :nth-child(2) > .n-parent-list > :nth-child(7) > a').should('include.text', 'TOWER PARKING SYSTEM'); //SHUTTLE PARKING SYSTEM\ncy.get(':nth-child(1) > :nth-child(2) > .n-parent-list > :nth-child(8) > a').should('include.text', 'SHUTTLE PARKING SYSTEM'); //CAR LIFTS PARKING SYSTEM\ncy.get(':nth-child(1) > :nth-child(2) > .n-parent-list > :nth-child(9) > a').should('include.text', 'CAR LIFTS PARKING SYSTEM'); //Client Insight\ncy.get(':nth-child(2) > :nth-child(2) > .n-parent-list > :nth-child(1) > a').should('include.text', 'Landmark Projects');\ncy.get(':nth-child(2) > :nth-child(2) > .n-parent-list > :nth-child(2) > a').should('include.text', 'Blogs');\ncy.get(':nth-child(2) > :nth-child(2) > .n-parent-list > :nth-child(3) > a').should('include.text', 'FAQ');\ncy.get(':nth-child(2) > :nth-child(2) > .n-parent-list > :nth-child(4) > a').should('include.text', 'DO');\ncy.get(':nth-child(2) > :nth-child(2) > .n-parent-list > :nth-child(5) > a').should('include.text', 'Testimonials');\ncy.get(':nth-child(2) > :nth-child(2) > .n-parent-list > :nth-child(6) > a').should('include.text', 'News');\ncy.get(':nth-child(2) > :nth-child(2) > .n-parent-list > :nth-child(7) > a').should('include.text', 'Videos');\ncy.get(':nth-child(2) > :nth-child(2) > .n-parent-list > :nth-child(8) > a').should('include.text', 'Download Brochure'); //Career Centre\ncy.get(':nth-child(3) > .n-parent-list > :nth-child(1) > a').should('include.text', 'Life at RR Parkon');\ncy.get(':nth-child(3) > .n-parent-list > :nth-child(2) > a').should('include.text', 'Current Openings'); //Contact Us\ncy.get(':nth-child(4) > .n-parent-list > :nth-child(1) > a').should('include.text', 'Contact Us');\ncy.get(':nth-child(4) > .n-parent-list > :nth-child(2) > a').should('include.text', 'Business Enquiry'); //Customized Solutions\ncy.get(':nth-child(5) > :nth-child(1) > a').should('include.text', 'Customized Solutions'); //Privacy policy\ncy.get(':nth-child(5) > :nth-child(2) > a').should('include.text', 'Privacy Policy'); //terms of use.\ncy.get(':nth-child(5) > :nth-child(3) > a').should('include.text', 'Terms of Use');\ncy.log('terms of use checked'); //Legal Disclaimer\ncy.get(':nth-child(5) > :nth-child(4) > a').should('include.text', 'Legal Disclaimera');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<a>' to contain text 'Legal Disclaimera', but the text was 'Legal Disclaimer'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<a>' to contain text 'Legal Disclaimera', but the text was 'Legal Disclaimer'\n    at Context.eval (https://www.rrparkon.com/__cypress/tests?p=cypress\\integration\\Generic-Functions\\Sitemap.js:155:49)",
+                "diff": "- 'Legal Disclaimer'\n+ 'Legal Disclaimera'\n"
+              },
+              "uuid": "6a5a5280-75a3-4523-85e9-3b035fa13b2f",
+              "parentUUID": "6a77c0ad-54fe-4e87-a2ce-fd7d26da5222",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6a5a5280-75a3-4523-85e9-3b035fa13b2f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6129,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

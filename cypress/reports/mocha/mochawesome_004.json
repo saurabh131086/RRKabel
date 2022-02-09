@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:15:07.763Z",
+    "end": "2022-02-09T06:15:10.396Z",
+    "duration": 2633,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "39865336-8215-4cd2-a2b8-1c8c98aa357a",
+      "title": "",
+      "fullFile": "cypress/integration/AMC/AMCupgrades.js",
+      "file": "cypress/integration/AMC/AMCupgrades.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1f7b20cb-1ba3-4e12-b5f7-3567d32194d1",
+          "title": "Test Car AMC Upgrades System page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Car AMC Upgrades System page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1099,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n//cy.visit('https://www.rrparkon.com/amc/upgrade-parking-system-software')\ncy.visit(Cypress.env('url') + \"amc/upgrade-parking-system-software\");\ncy.title().should('eq', 'System Upgrade | Automated Car Parking | RR Parkon');",
+              "err": {},
+              "uuid": "98866c62-9c14-44e9-930c-bfa594f62136",
+              "parentUUID": "1f7b20cb-1ba3-4e12-b5f7-3567d32194d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content AMC Upgrade Page",
+              "fullTitle": "Test Car AMC Upgrades System page Should Check for content AMC Upgrade Page",
+              "timedOut": null,
+              "duration": 127,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h1').should('include.text', 'Software Upgrade*');\ncy.get('h4').should('include.text', 'Inclusion of RFID, Biometric Systems, Touch Screens Controls');\ncy.get('h4').should('include.text', 'Integration of Parking Management System');\ncy.get('h4').should('include.text', '* Conditions Apply');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "15dbba9a-f678-4291-a82c-381a4ac0c231",
+              "parentUUID": "1f7b20cb-1ba3-4e12-b5f7-3567d32194d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Colours on page",
+              "fullTitle": "Test Car AMC Upgrades System page Should find Colours on page",
+              "timedOut": null,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "96ec6f8b-bc3c-476e-96fb-abfc37a791fb",
+              "parentUUID": "1f7b20cb-1ba3-4e12-b5f7-3567d32194d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Classes on page",
+              "fullTitle": "Test Car AMC Upgrades System page Should find Classes on page",
+              "timedOut": null,
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "0a0aad39-9b31-4534-8aa8-a2e0058c49ed",
+              "parentUUID": "1f7b20cb-1ba3-4e12-b5f7-3567d32194d1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "98866c62-9c14-44e9-930c-bfa594f62136",
+            "15dbba9a-f678-4291-a82c-381a4ac0c231",
+            "96ec6f8b-bc3c-476e-96fb-abfc37a791fb",
+            "0a0aad39-9b31-4534-8aa8-a2e0058c49ed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1273,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

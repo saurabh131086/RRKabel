@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:16:00.170Z",
+    "end": "2022-02-09T06:16:02.846Z",
+    "duration": 2676,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08f4b3f5-7e43-4c47-ad72-666f0d7f4ff7",
+      "title": "",
+      "fullFile": "cypress/integration/Client-Insights/News.js",
+      "file": "cypress/integration/Client-Insights/News.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "588f7094-0a95-43cf-8d26-656d788445ee",
+          "title": "Test News page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test News page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1107,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n//  cy.visit('https://www.rrparkon.com/media-center/news-car-lift-car-parking-solution')\ncy.visit(Cypress.env('url') + \"/media-center/news-car-lift-car-parking-solution\");\ncy.title().should('eq', 'RR Parkon News | Underground Parking System');",
+              "err": {},
+              "uuid": "dfecd1b9-99f2-4a05-9816-d862a388b4a4",
+              "parentUUID": "588f7094-0a95-43cf-8d26-656d788445ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks for content News Page",
+              "fullTitle": "Test News page Checks for content News Page",
+              "timedOut": null,
+              "duration": 77,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'News');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "0d7b3e8b-c995-4f9a-9086-0fabadb849a8",
+              "parentUUID": "588f7094-0a95-43cf-8d26-656d788445ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test News page Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 31,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "033ecd72-9923-4661-9dd9-3b1129104c0d",
+              "parentUUID": "588f7094-0a95-43cf-8d26-656d788445ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test News page Should check Classes on page",
+              "timedOut": null,
+              "duration": 22,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "40aa777c-9201-4f08-9019-d6f2e1ee13ca",
+              "parentUUID": "588f7094-0a95-43cf-8d26-656d788445ee",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dfecd1b9-99f2-4a05-9816-d862a388b4a4",
+            "0d7b3e8b-c995-4f9a-9086-0fabadb849a8",
+            "033ecd72-9923-4661-9dd9-3b1129104c0d",
+            "40aa777c-9201-4f08-9019-d6f2e1ee13ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1237,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

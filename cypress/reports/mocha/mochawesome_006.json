@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:15:17.901Z",
+    "end": "2022-02-09T06:15:20.564Z",
+    "duration": 2663,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5bdf066f-193a-41c3-92c3-0c00358d4916",
+      "title": "",
+      "fullFile": "cypress/integration/Career-center/Lifeatrrparkon.js",
+      "file": "cypress/integration/Career-center/Lifeatrrparkon.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "47f27d9f-7ddd-47b8-9d45-99c906dc4e78",
+          "title": "Test Life at RRparkon page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Life at RRparkon page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1060,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/career-center/employee-rrparkon')\ncy.visit(Cypress.env('url') + \"/career-center/employee-rrparkon\");\ncy.title().should('eq', 'Life At RR Parkon');",
+              "err": {},
+              "uuid": "2da644af-9c70-4c29-897e-df1c9be35539",
+              "parentUUID": "47f27d9f-7ddd-47b8-9d45-99c906dc4e78",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks for content AMC Page",
+              "fullTitle": "Test Life at RRparkon page Checks for content AMC Page",
+              "timedOut": null,
+              "duration": 82,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'Life at RR Parkon');\ncy.get('h4').should('include.text', 'We are much more than a technology solution provider.');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "d9696dc1-8b96-4b34-a65a-2791993e1e5c",
+              "parentUUID": "47f27d9f-7ddd-47b8-9d45-99c906dc4e78",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Colours on page",
+              "fullTitle": "Test Life at RRparkon page Should find Colours on page",
+              "timedOut": null,
+              "duration": 63,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "00e80d80-c894-458e-9f3d-0a23e722c884",
+              "parentUUID": "47f27d9f-7ddd-47b8-9d45-99c906dc4e78",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Classes on page",
+              "fullTitle": "Test Life at RRparkon page Should find Classes on page",
+              "timedOut": null,
+              "duration": 28,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "baef3776-01f7-4134-89ce-39b120d32092",
+              "parentUUID": "47f27d9f-7ddd-47b8-9d45-99c906dc4e78",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2da644af-9c70-4c29-897e-df1c9be35539",
+            "d9696dc1-8b96-4b34-a65a-2791993e1e5c",
+            "00e80d80-c894-458e-9f3d-0a23e722c884",
+            "baef3776-01f7-4134-89ce-39b120d32092"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1233,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

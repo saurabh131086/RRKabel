@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:14:51.975Z",
+    "end": "2022-02-09T06:14:54.360Z",
+    "duration": 2385,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eaece90d-b6c2-4b20-ac69-c571209e91f6",
+      "title": "",
+      "fullFile": "cypress/integration/About-Us/Company-Overview.js",
+      "file": "cypress/integration/About-Us/Company-Overview.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aac6d867-9907-4c39-b58a-4378c195614c",
+          "title": "Test Company overview form on About Us",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Company overview form on About Us Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1018,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/company-overview')\ncy.visit(Cypress.env('url') + \"/company-overview\");\ncy.title().should('eq', 'RR Parkon Company Overview | Automated Parking System');",
+              "err": {},
+              "uuid": "2e78c5a4-8329-4760-9bc6-518d8dc67e86",
+              "parentUUID": "aac6d867-9907-4c39-b58a-4378c195614c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Company overview Page",
+              "fullTitle": "Test Company overview form on About Us Should Check for content Company overview Page",
+              "timedOut": null,
+              "duration": 101,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'RR Parkon completes 20 successful years');\ncy.get('h3').should('include.text', 'RR Parkon is a part of RR Global');\ncy.get('h3').should('include.text', 'Vision & Mission');\ncy.get('h3').should('include.text', 'Leadership');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "7c79c1fc-9f33-4bb2-8930-98291cc41914",
+              "parentUUID": "aac6d867-9907-4c39-b58a-4378c195614c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Colours on page",
+              "fullTitle": "Test Company overview form on About Us Should find Colours on page",
+              "timedOut": null,
+              "duration": 38,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=leadership-wrp-full]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('fffce5');\n});\ncy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "7ca7760b-6c4e-4a12-b4b3-d2c1bef0b9e9",
+              "parentUUID": "aac6d867-9907-4c39-b58a-4378c195614c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find Classes on page",
+              "fullTitle": "Test Company overview form on About Us Should find Classes on page",
+              "timedOut": null,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "67a0fa86-ea13-4e12-9baf-5229227a25ae",
+              "parentUUID": "aac6d867-9907-4c39-b58a-4378c195614c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e78c5a4-8329-4760-9bc6-518d8dc67e86",
+            "7c79c1fc-9f33-4bb2-8930-98291cc41914",
+            "7ca7760b-6c4e-4a12-b4b3-d2c1bef0b9e9",
+            "67a0fa86-ea13-4e12-9baf-5229227a25ae"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1183,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

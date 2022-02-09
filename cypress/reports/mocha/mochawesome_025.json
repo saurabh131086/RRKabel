@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:17:30.571Z",
+    "end": "2022-02-09T06:17:32.723Z",
+    "duration": 2152,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "566dba24-b0ba-4a5f-8bc0-a26d656fc837",
+      "title": "",
+      "fullFile": "cypress/integration/Parking-Solutions/Horizontal-Parking-System.js",
+      "file": "cypress/integration/Parking-Solutions/Horizontal-Parking-System.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e28785f-969f-4143-8823-3b52479caf0e",
+          "title": "Test Horizontal Parking System",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Horizontal Parking System Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 909,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/parking-solution/horizontal-circulation')\ncy.visit(Cypress.env('url') + \"/parking-solution/horizontal-circulation\");\ncy.title().should('eq', 'Horizontal Circulation Type Car Parking System | RR Parkon');",
+              "err": {},
+              "uuid": "50c96a4b-f968-4e68-b89f-61167ab4f61e",
+              "parentUUID": "1e28785f-969f-4143-8823-3b52479caf0e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Horizontal Parking System page",
+              "fullTitle": "Test Horizontal Parking System Should Check for content Horizontal Parking System page",
+              "timedOut": null,
+              "duration": 72,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'HORIZONTAL');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "7fc2eed8-03a0-4b3f-bc1f-5b9c3a1c6c5a",
+              "parentUUID": "1e28785f-969f-4143-8823-3b52479caf0e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test Horizontal Parking System Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 26,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "f2f89928-5155-4537-a13c-5646489d2ea1",
+              "parentUUID": "1e28785f-969f-4143-8823-3b52479caf0e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test Horizontal Parking System Should check Classes on page",
+              "timedOut": null,
+              "duration": 20,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "6c545ab0-15bd-45ff-8ebc-0704b6028aa3",
+              "parentUUID": "1e28785f-969f-4143-8823-3b52479caf0e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50c96a4b-f968-4e68-b89f-61167ab4f61e",
+            "7fc2eed8-03a0-4b3f-bc1f-5b9c3a1c6c5a",
+            "f2f89928-5155-4537-a13c-5646489d2ea1",
+            "6c545ab0-15bd-45ff-8ebc-0704b6028aa3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1027,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

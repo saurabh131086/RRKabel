@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-09T06:17:46.860Z",
+    "end": "2022-02-09T06:17:49.922Z",
+    "duration": 3062,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8d3c6feb-972b-4361-a845-176d3883ec6b",
+      "title": "",
+      "fullFile": "cypress/integration/Parking-Solutions/OGP-Electromechanical-system.js",
+      "file": "cypress/integration/Parking-Solutions/OGP-Electromechanical-system.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "84504142-e33c-47b6-845b-5ddc44359bb5",
+          "title": "Test Electromechanical Parking System page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to check title on Page",
+              "fullTitle": "Test Electromechanical Parking System page Should be able to check title on Page",
+              "timedOut": null,
+              "duration": 1436,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\n// cy.visit('https://www.rrparkon.com/parking-solution/ogp-electromechanical-system')\ncy.visit(Cypress.env('url') + \"/parking-solution/ogp-electromechanical-system\");\ncy.visit(Cypress.env('url') + \"/parking-solution/ogp-electromechanical-system\");\ncy.title().should('eq', 'Puzzle Lift Parking System | Puzzle Parking System India | RR Parkon');",
+              "err": {},
+              "uuid": "575a4ee4-2056-4dc7-9d30-077ab1c0ea18",
+              "parentUUID": "84504142-e33c-47b6-845b-5ddc44359bb5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check for content Electromechanical Parking System page",
+              "fullTitle": "Test Electromechanical Parking System page Should Check for content Electromechanical Parking System page",
+              "timedOut": null,
+              "duration": 106,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h4').should('include.text', 'Electromechanical System');\ncy.log(' All Content is Present');",
+              "err": {},
+              "uuid": "d5f07bbb-447f-42ef-9a41-69648ab6ea33",
+              "parentUUID": "84504142-e33c-47b6-845b-5ddc44359bb5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Check and find Colours on page",
+              "fullTitle": "Test Electromechanical Parking System page Should Check and find Colours on page",
+              "timedOut": null,
+              "duration": 36,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[class=hamburger-menu-mobile]').invoke('css', 'background-color').then(bgcolor => {\n  expect((0, _rgbHex.default)(bgcolor)).to.eq('00000000');\n});",
+              "err": {},
+              "uuid": "7e01519f-01db-47b6-b901-1357655a64f6",
+              "parentUUID": "84504142-e33c-47b6-845b-5ddc44359bb5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should check Classes on page",
+              "fullTitle": "Test Electromechanical Parking System page Should check Classes on page",
+              "timedOut": null,
+              "duration": 30,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('*[class^=\"header-top uk-flex uk-flex-between uk-flex-top bg-blue\"]');\ncy.log('Class1 is Present');\ncy.get('*[class^=\"logo-box\"]');\ncy.log('Class2 is Present');\ncy.get('*[class^=\"hamburger-menu-mobile\"]');\ncy.log('Class3 is Present');",
+              "err": {},
+              "uuid": "0e9b605d-5ee3-43e7-a963-952ce420f629",
+              "parentUUID": "84504142-e33c-47b6-845b-5ddc44359bb5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "575a4ee4-2056-4dc7-9d30-077ab1c0ea18",
+            "d5f07bbb-447f-42ef-9a41-69648ab6ea33",
+            "7e01519f-01db-47b6-b901-1357655a64f6",
+            "0e9b605d-5ee3-43e7-a963-952ce420f629"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1608,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "quite": true,
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "screenshotOnRunFailure": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
