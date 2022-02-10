@@ -10,6 +10,25 @@
     "mochawesome-merge": "^4.2.1",
     "mochawesome-report-generator": "^6.0.1"
   },
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/stepDefinitions",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+    },
+
+
+
+
+
+
+
+
   "name": "rrkabel",
   "version": "1.0.0",
   "description": "RRkabel check test",
