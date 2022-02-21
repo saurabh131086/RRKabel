@@ -14,10 +14,12 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
-
+import './commands';
+import 'cypress-file-upload';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+
 import addContext from "mochawesome/addContext";
 Cypress.on("test:after:run", (test, runnable) => {  
     if (test.state === "failed") {    

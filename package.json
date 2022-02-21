@@ -3,6 +3,7 @@
     "cucumber-html-reporter": "^5.5.0",
     "cypress": "^8.4.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
     "mocha": "^9.2.0",
@@ -11,7 +12,6 @@
     "mochawesome-report-generator": "^6.0.1",
     "multiple-cucumber-html-reporter": "^1.19.0"
   },
-  
   "name": "rrkabel",
   "version": "1.0.0",
   "description": "RRkabel check test",
